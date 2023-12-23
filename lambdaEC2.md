@@ -1,0 +1,9 @@
+# Difference between AWS Lambda and EC2
+
+| Type |AWS Lambda | AWS EC2 |
+| --- |---| --- |
+| **Service Type** | <ol><li>Uses serverless computing service</li> <li> Allows to run code without provisioning or managing servers.</li> <li>Executes code in response to events (e.g., changes to data in an Amazon S3 bucket, updates to a DynamoDB table, HTTP requests via API Gateway).</li></ol> | <ol><li>Virtual servers (instances) in the cloud.</li> <li> Provides full control over the server's configuration.</li> <li> Suitable for traditional applications and workloads that require a dedicated server.</li> </ol>|
+| **Scaling** | <ol><li>Scales automatically in response to the number of incoming requests.</li> | <ol> <li>Requires manual configuration or use of Auto Scaling to scale based on demand.</li><li>You need to manage the scaling policies and configurations. </li></ol>|
+| **Pricing Model** | <ol><li>Pay-per-execution and compute time.</li><li>No charges for idle time.</li></ol> | <ol><li>Pay for the provisioned capacity (per hour) regardless of whether the server is actively processing requests.</li></ol> |
+| **Management Overhead** | <ol><li>Abstracts away server management tasks.</li><li>Developers focus on writing code, not infrastructure management.</li></ol> | <ol><li>Requires manual configuration, monitoring, and maintenance of virtual machines.</li><li>More control but also more management overhead.</li></ol> |
+| **Use Cases** |<ol><li>Ideal for event-driven, short-duration tasks.</li><li>Microservices, automation, and serverless architectures.</li></ol>  | <ol><li>Suitable for traditional applications, legacy systems, and workloads that require persistent servers.</li><li>More control over the server environment.</li></ol> |
