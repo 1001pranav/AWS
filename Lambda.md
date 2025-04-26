@@ -4,7 +4,7 @@ AWS Lambda is a service that runs your code only when triggered, without you wor
 * You just write a function → upload it → and AWS runs it when it’s triggered.
 
 
-![AWS Lambda](./Assets/AWS_LAMBDA.png)
+![AWS Lambda](./Assets/lambda_working.png)
 # Working of the AWS Lambda
 1. **Event Sources/Triggers** - Lambda functions are triggered by events from various AWS services (like S3, API Gateway, DynamoDB) or custom applications.
 2. **Function Invocation**: Once the lambda gets triggered following things will happen.
